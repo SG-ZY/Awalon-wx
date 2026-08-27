@@ -1,0 +1,4 @@
+{
+  "desc": "阿瓦隆桌游工具",
+  "rules": [{ "action": "allow", "page": "*" }]
+}
