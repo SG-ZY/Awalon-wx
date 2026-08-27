@@ -1,0 +1,13 @@
+﻿.gradle/
+**/build/
+.tools/
+.idea/
+local.properties
+*.iml
+/apkinspect/
+/.tmp-*
+/after-*.png
+/current-screen.png
+/retest-*.png
+/test-current.png
+/build-android.log

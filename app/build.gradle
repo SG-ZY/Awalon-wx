@@ -1,0 +1,24 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.avalon.offline'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.avalon.offline'
+        minSdk 24
+    targetSdk 34
+        versionCode 1
+        versionName '1.0.0'
+    }
+}
+def avalonVersionName = android.defaultConfig.versionName
+androidComponents {
+    onVariants(selector().all()) { variant ->
+        variant.outputs.forEach { output ->
+            output.outputFileName.set("avalon-v${avalonVersionName}.apk")
+        }
+    }
+}
